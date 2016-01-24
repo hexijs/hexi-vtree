@@ -1,0 +1,46 @@
+{
+  "name": "hexi-vtree",
+  "version": "0.0.0",
+  "description": "A hexi plugin for sending vtree responses",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/{**/,/}*.js",
+    "coverage": "istanbul cover _mocha test/{**/,/}*.js -- -R spec",
+    "precoveralls": "istanbul cover _mocha test/{**/,/}*.js --report lcovonly -- -R spec && npm i coveralls@2",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "postcoveralls": "rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zkochan/hexi-vtree"
+  },
+  "keywords": [
+    "hexi",
+    "vtree",
+    "plugin",
+    "virtual-dom"
+  ],
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "zoltan.kochan@gmail.com",
+    "url": "http://kochan.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkochan/hexi-vtree/issues"
+  },
+  "homepage": "https://github.com/zkochan/hexi-vtree#readme",
+  "dependencies": {
+    "vdom-to-html": "^2.2.0"
+  },
+  "devDependencies": {
+    "hexi": "^0.2.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0",
+    "virtual-dom": "^2.1.1"
+  }
+}
