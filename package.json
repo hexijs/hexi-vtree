@@ -19,6 +19,7 @@
   },
   "keywords": [
     "hexi",
+    "hexi-plugin",
     "vtree",
     "plugin",
     "virtual-dom"
@@ -37,7 +38,8 @@
     "vdom-to-html": "^2.2.0"
   },
   "devDependencies": {
-    "hexi": "^0.2.0",
+    "express": "^4.13.4",
+    "hexi": "^0.8.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "supertest": "^1.1.0",

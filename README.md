@@ -26,4 +26,4 @@ const hexiVtree = require('hexi-vtree')
 
 ## License
 
-MIT
+MIT © [Zoltan Kochan](https://www.kochan.io)
